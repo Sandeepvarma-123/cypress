@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-07T09:37:36.081Z",
+    "end": "2021-12-07T09:38:19.426Z",
+    "duration": 43345,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "de9ee0a4-8118-4cc0-8fbb-4b05163b92fa",
+      "title": "",
+      "fullFile": "cypress/integration/sel_cy_demo.js",
+      "file": "cypress/integration/sel_cy_demo.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f6ebd8c-60c5-41ce-82d0-7324e6c9fc99",
+          "title": "demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "simple forms demo",
+              "fullTitle": "demo simple forms demo",
+              "timedOut": null,
+              "duration": 12843,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.navigate();\nrunner.open_ipforms();\nrunner.simpleForms_message(); //    runner.simpleform1_validation();\nrunner.simpleForms_total();",
+              "err": {},
+              "uuid": "93da25bb-a92e-4293-aeb5-79deff8c9824",
+              "parentUUID": "5f6ebd8c-60c5-41ce-82d0-7324e6c9fc99",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check box demo",
+              "fullTitle": "demo check box demo",
+              "timedOut": null,
+              "duration": 9888,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.open_ipforms();\nrunner.checkBox();",
+              "err": {},
+              "uuid": "10a29ab7-d76c-4d87-897b-d141d62b766f",
+              "parentUUID": "5f6ebd8c-60c5-41ce-82d0-7324e6c9fc99",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "radio demo",
+              "fullTitle": "demo radio demo",
+              "timedOut": null,
+              "duration": 4238,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.open_ipforms();\nrunner.open_radioBox();\nrunner.checkRadioButton_1();\nrunner.checkRadioButton_2();",
+              "err": {},
+              "uuid": "e192316b-6392-4b76-98b3-0a5c3c0791fa",
+              "parentUUID": "5f6ebd8c-60c5-41ce-82d0-7324e6c9fc99",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "table demo",
+              "fullTitle": "demo table demo",
+              "timedOut": null,
+              "duration": 4961,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//    runner.navigate();\nrunner.open_table();\nrunner.tableDemo();",
+              "err": {},
+              "uuid": "894c5b4c-6848-4de2-bb70-90b1b8462e74",
+              "parentUUID": "5f6ebd8c-60c5-41ce-82d0-7324e6c9fc99",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alerts",
+              "fullTitle": "demo Alerts",
+              "timedOut": null,
+              "duration": 7676,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.navigate();\nrunner.open_alertBox();\nrunner.click_alert('I am an alert box!');\nrunner.alertConfirm(false);\nrunner.promptBoxAlert();",
+              "err": {},
+              "uuid": "733f3b2f-d49f-4f08-91bc-b1f37cdb072a",
+              "parentUUID": "5f6ebd8c-60c5-41ce-82d0-7324e6c9fc99",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93da25bb-a92e-4293-aeb5-79deff8c9824",
+            "10a29ab7-d76c-4d87-897b-d141d62b766f",
+            "e192316b-6392-4b76-98b3-0a5c3c0791fa",
+            "894c5b4c-6848-4de2-bb70-90b1b8462e74",
+            "733f3b2f-d49f-4f08-91bc-b1f37cdb072a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 39606,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

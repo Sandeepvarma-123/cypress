@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-07T09:39:24.658Z",
+    "end": "2021-12-07T09:39:43.927Z",
+    "duration": 19269,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c483556f-211d-46bb-a31d-3872711f1284",
+      "title": "",
+      "fullFile": "cypress/integration/test2.js",
+      "file": "cypress/integration/test2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "check box",
+          "fullTitle": "check box",
+          "timedOut": null,
+          "duration": 15871,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('http://demo.seleniumeasy.com/');\ncy.get('.at-cm-no-button').click();\ncy.get(':nth-child(1) > :nth-child(1) > .dropdown-toggle').click();\ncy.get('.open > .dropdown-menu > :nth-child(2) > a').click();\ncy.get('#isAgeSelected').check();\ncy.get('#check1').click();\ncy.get(':nth-child(3) > label > .cb1-element').uncheck();",
+          "err": {},
+          "uuid": "6eb5b828-1337-4d49-bb87-eb2976ee2967",
+          "parentUUID": "c483556f-211d-46bb-a31d-3872711f1284",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "6eb5b828-1337-4d49-bb87-eb2976ee2967"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 15871,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

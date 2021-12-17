@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-07T09:43:58.106Z",
+    "end": "2021-12-07T09:44:56.188Z",
+    "duration": 58082,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ab4477e4-412c-4355-96f5-b5275ce82f8a",
+      "title": "",
+      "fullFile": "cypress/integration/sel_cy_demo.js",
+      "file": "cypress/integration/sel_cy_demo.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "76d9ed03-9c25-4063-969a-b16d609f12ee",
+          "title": "demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "simple forms demo",
+              "fullTitle": "demo simple forms demo",
+              "timedOut": null,
+              "duration": 26712,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "runner.navigate();\nrunner.open_ipforms();\nrunner.simpleForms_message(); //    runner.simpleform1_validation();\nrunner.simpleForms_total();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.at-cm-no-button`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.at-cm-no-button`, but never found it.\n    at Runner.navigate (http://demo.seleniumeasy.com/__cypress/tests?p=cypress\\integration\\sel_cy_demo.js:158:8)\n    at Context.eval (http://demo.seleniumeasy.com/__cypress/tests?p=cypress\\integration\\sel_cy_demo.js:106:12)",
+                "diff": null
+              },
+              "uuid": "9f891346-b3d4-4a6b-8f91-6e659862a1a5",
+              "parentUUID": "76d9ed03-9c25-4063-969a-b16d609f12ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check box demo",
+              "fullTitle": "demo check box demo",
+              "timedOut": null,
+              "duration": 3749,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.open_ipforms();\nrunner.checkBox();",
+              "err": {},
+              "uuid": "8ea4d991-5f01-4420-9993-b45cc518f2b0",
+              "parentUUID": "76d9ed03-9c25-4063-969a-b16d609f12ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "radio demo",
+              "fullTitle": "demo radio demo",
+              "timedOut": null,
+              "duration": 4331,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.open_ipforms();\nrunner.open_radioBox();\nrunner.checkRadioButton_1();\nrunner.checkRadioButton_2();",
+              "err": {},
+              "uuid": "a45d32a7-dc9a-4cf7-b6e3-209f10792432",
+              "parentUUID": "76d9ed03-9c25-4063-969a-b16d609f12ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "table demo",
+              "fullTitle": "demo table demo",
+              "timedOut": null,
+              "duration": 7063,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//    runner.navigate();\nrunner.open_table();\nrunner.tableDemo();",
+              "err": {},
+              "uuid": "5d364b91-93e3-4540-8ffe-785b981b42aa",
+              "parentUUID": "76d9ed03-9c25-4063-969a-b16d609f12ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alerts",
+              "fullTitle": "demo Alerts",
+              "timedOut": null,
+              "duration": 11511,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.navigate();\nrunner.open_alertBox();\nrunner.click_alert('I am an alert box!');\nrunner.alertConfirm(false);\nrunner.promptBoxAlert();",
+              "err": {},
+              "uuid": "e1823188-ca12-45ac-9bec-febe48614b9b",
+              "parentUUID": "76d9ed03-9c25-4063-969a-b16d609f12ee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8ea4d991-5f01-4420-9993-b45cc518f2b0",
+            "a45d32a7-dc9a-4cf7-b6e3-209f10792432",
+            "5d364b91-93e3-4540-8ffe-785b981b42aa",
+            "e1823188-ca12-45ac-9bec-febe48614b9b"
+          ],
+          "failures": [
+            "9f891346-b3d4-4a6b-8f91-6e659862a1a5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 53366,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

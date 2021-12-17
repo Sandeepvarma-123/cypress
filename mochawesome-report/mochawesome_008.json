@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-07T09:48:32.816Z",
+    "end": "2021-12-07T09:49:28.486Z",
+    "duration": 55670,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "176d809b-ae1a-4455-8fc2-befa06c52298",
+      "title": "",
+      "fullFile": "cypress/integration/sel_cy_demo.js",
+      "file": "cypress/integration/sel_cy_demo.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5598cd96-c466-404e-a8a3-d7d1e5de244b",
+          "title": "demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "simple forms demo",
+              "fullTitle": "demo simple forms demo",
+              "timedOut": null,
+              "duration": 17811,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.navigate();\nrunner.open_ipforms();\nrunner.simpleForms_message(); //    runner.simpleform1_validation();\nrunner.simpleForms_total();",
+              "err": {},
+              "uuid": "333758d0-6fdc-4132-ab6a-d485d5c2282b",
+              "parentUUID": "5598cd96-c466-404e-a8a3-d7d1e5de244b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check box demo",
+              "fullTitle": "demo check box demo",
+              "timedOut": null,
+              "duration": 5784,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.open_ipforms();\nrunner.checkBox();",
+              "err": {},
+              "uuid": "ceadc779-5276-4407-a907-08a76c38d237",
+              "parentUUID": "5598cd96-c466-404e-a8a3-d7d1e5de244b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "radio demo",
+              "fullTitle": "demo radio demo",
+              "timedOut": null,
+              "duration": 7809,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "runner.open_ipforms();\nrunner.open_radioBox();\nrunner.checkRadioButton_1();\nrunner.checkRadioButton_2();",
+              "err": {},
+              "uuid": "2f8e90f6-6f56-4a5f-8eb6-391440c7df83",
+              "parentUUID": "5598cd96-c466-404e-a8a3-d7d1e5de244b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "table demo",
+              "fullTitle": "demo table demo",
+              "timedOut": null,
+              "duration": 6258,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//    runner.navigate();\nrunner.open_table();\nrunner.tableDemo();",
+              "err": {},
+              "uuid": "d55b3b68-c008-4857-8a28-0ebde0e1dcb3",
+              "parentUUID": "5598cd96-c466-404e-a8a3-d7d1e5de244b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alerts",
+              "fullTitle": "demo Alerts",
+              "timedOut": null,
+              "duration": 13150,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "runner.navigate();\nrunner.open_alertBox();\nrunner.click_alert('I am an alert box!');\nrunner.alertConfirm(false);\nrunner.promptBoxAlert();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://demo.seleniumeasy.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: read ECONNRESET\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://demo.seleniumeasy.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: read ECONNRESET\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:158141:82\n    at visitFailedByErr (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:157494:12)\n    at http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:158140:11\n    at tryCatcher (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://demo.seleniumeasy.com/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Runner.navigate (http://demo.seleniumeasy.com/__cypress/tests?p=cypress\\integration\\sel_cy_demo.js:156:8)\n    at Context.eval (http://demo.seleniumeasy.com/__cypress/tests?p=cypress\\integration\\sel_cy_demo.js:128:12)\n\nFrom Node.js Internals:\n  Error: read ECONNRESET\n      at TCP.onStreamRead (node:internal/stream_base_commons:211:20)\n  ",
+                "diff": null
+              },
+              "uuid": "84dc720b-4461-4590-993b-9297645c4517",
+              "parentUUID": "5598cd96-c466-404e-a8a3-d7d1e5de244b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "333758d0-6fdc-4132-ab6a-d485d5c2282b",
+            "ceadc779-5276-4407-a907-08a76c38d237",
+            "2f8e90f6-6f56-4a5f-8eb6-391440c7df83",
+            "d55b3b68-c008-4857-8a28-0ebde0e1dcb3"
+          ],
+          "failures": [
+            "84dc720b-4461-4590-993b-9297645c4517"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 50812,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
